@@ -90,10 +90,9 @@ function stopVideoStream() {
 
 function loadBodyPix() {
   options = {
-    architecture: 'ResNet50',
-    multiplier: 0.5,
+    multiplier: 0.75,
     stride: 16,
-    quantBytes: 1
+    quantBytes: 2
   }
   bodyPix.load(options)
     .then(net => perform(net))
